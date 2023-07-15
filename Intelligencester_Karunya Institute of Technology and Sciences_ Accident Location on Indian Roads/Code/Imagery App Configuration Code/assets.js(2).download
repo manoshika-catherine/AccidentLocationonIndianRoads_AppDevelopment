@@ -1,0 +1,64 @@
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.mapColors = exports.predefinedOptions = exports.defaultInset = void 0;
+    exports.defaultInset = {
+        size: "medium",
+        title: "",
+        geometry: null
+    };
+    var pathname = window.location.pathname;
+    var distPath = pathname.substring(0, pathname.lastIndexOf("/"));
+    exports.predefinedOptions = [
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_US.png"), country: "us1" },
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_USPuerto.png"), country: "us2" },
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_France.png"), country: "fr" },
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_Japan.png"), country: "jp" },
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_Portugal.png"), country: "pt" },
+        { img: "".concat(distPath, "/assets/images/Insets_predefined_thumb_48x34_Spain.png"), country: "es" }
+    ];
+    exports.mapColors = [
+        {
+            type: "blue",
+            value: {
+                fill: "#D0E9FE",
+                outline: "#AFD1E4"
+            }
+        },
+        {
+            type: "green",
+            value: {
+                fill: "#DCF3E2",
+                outline: "#B0E0BC"
+            }
+        },
+        {
+            type: "gray",
+            value: {
+                fill: "#EDEDED",
+                outline: "#D7D7D7"
+            }
+        },
+        {
+            type: "night",
+            value: {
+                fill: "#000000",
+                outline: "#08223B"
+            }
+        },
+        {
+            type: "orange",
+            value: {
+                fill: "#F9EBDF",
+                outline: "#F4CCA7"
+            }
+        },
+        {
+            type: "tan",
+            value: {
+                fill: "#F1E2CA",
+                outline: "#D6C4A8"
+            }
+        }
+    ];
+});
